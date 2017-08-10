@@ -5,10 +5,6 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/aboutmyself', fuction(req, res))
-{
-   res .send("King is always king");
-}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
